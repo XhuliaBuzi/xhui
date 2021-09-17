@@ -1,3 +1,5 @@
+package JavaPazzel;
+
 import java.util.Scanner;
 
 public class JavaSubstring {

@@ -1,4 +1,4 @@
-package JavaPazzel;
+package java_pazzel;
 
 import java.math.BigInteger;
 import java.util.Scanner;

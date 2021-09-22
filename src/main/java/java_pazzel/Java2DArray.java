@@ -1,4 +1,4 @@
-package JavaPazzel;
+package java_pazzel;
 
 import java.io.IOException;
 import java.util.Scanner;

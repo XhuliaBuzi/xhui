@@ -1,4 +1,4 @@
-package InterviewPreparationKit;
+package interview_preparation_kit;
 
 import java.util.Scanner;
 
@@ -11,9 +11,7 @@ public class ArraysLeftRotation {
         for (int i = 0; i < arrayInt.length; i++) { arrayInt[i]=scanner.nextInt(); }
         for (int i = 0; i < d; d--) {
             int vler=arrayInt[i];
-            for (int j = 0; j < arrayInt.length-1; j++) {
-                arrayInt[j]=arrayInt[j+1];
-            }
+            System.arraycopy(arrayInt, 1, arrayInt, 0, arrayInt.length - 1);
             arrayInt[arrayInt.length-1]=vler;
         }
 

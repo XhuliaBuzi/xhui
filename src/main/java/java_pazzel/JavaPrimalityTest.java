@@ -9,6 +9,6 @@ public class JavaPrimalityTest {
         String n = scanner.nextLine();
         scanner.close();
         BigInteger s = new BigInteger(n);
-        System.out.println((s.isProbablePrime(1) && !s.equals(1)) ? "prime" : "not prime");
+        System.out.println((s.isProbablePrime(1) && !s.equals(BigInteger.ONE)) ? "prime" : "not prime");
     }
 }

@@ -13,6 +13,6 @@ public class JavaBigInteger {
         BigInteger i=firstnumber.multiply(secondnumber);
 
         System.out.println(sum);
-        System.out.println((i.equals(0))? "":i);
+        System.out.println((i.equals(BigInteger.ZERO))? "":i);
     }
 }

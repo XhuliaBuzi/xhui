@@ -3,15 +3,19 @@ package java_pazzel;
 import java.util.Scanner;
 
 public class JavaStringTokens {
-    private static final Scanner scanner=new Scanner(System.in);
-    private static final String strings=scanner.nextLine();
-    public static final String[] arrayString = strings.split("[ .,'?!]+");
-
     public static void main(String[] args) {
-        System.out.println(arrayString.length);
-        for (String print: arrayString) {
-            System.out.println(print);
+        Scanner scan = new Scanner(System.in);
+        scan.useDelimiter("\\Z");
+        String s = scan.next().trim();
+        if (s.length() > 0) {
+            String[] tokens = s.split("[!,?._'@\\s]+");
+            System.out.println(tokens.length);
+            for(String token : tokens) {
+                System.out.println(token);
+            }
+        } else {
+            System.out.println(0);
         }
-    }
+        scan.close();
+    }}
 
-}

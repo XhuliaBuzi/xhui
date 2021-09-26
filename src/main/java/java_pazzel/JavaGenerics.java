@@ -6,6 +6,7 @@ class Printer {
         for (Object t : object) System.out.println(t);
     }
 }
+
 public class JavaGenerics {
     public static void main(String[] args) {
         Printer myPrinter = new Printer();

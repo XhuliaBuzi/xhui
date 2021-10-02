@@ -13,7 +13,7 @@ class Result {
     }
 
 }
-public class Day2DataTypes {
+public class DayCTwoDataTypes {
 
         public static void main(String[] args) throws IOException {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

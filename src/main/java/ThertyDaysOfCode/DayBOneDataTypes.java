@@ -2,7 +2,7 @@ package ThertyDaysOfCode;
 
 import java.util.Scanner;
 
-public class Day1DataTypes {
+public class DayBOneDataTypes {
     static Scanner scanner=new Scanner(System.in);
     public static void main(String[] args) {
         int number=scanner.nextInt();

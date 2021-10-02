@@ -2,7 +2,7 @@ package ThertyDaysOfCode;
 
 import java.util.Scanner;
 
-public class Day3IntrotoConditionalStatements {
+public class DayEThreeIntrotoConditionalStatements {
     static Scanner scanner=new Scanner(System.in);
     static int number=scanner.nextInt();
     public static void main(String[] args) {

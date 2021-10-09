@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Result {
+    private Result() {
+        throw new IllegalStateException("Utility class");
+    }
     public static void minimumBribes(List<Integer> q) {
         int dif = 0;
         boolean chaotic = false;

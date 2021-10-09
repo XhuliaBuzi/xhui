@@ -24,7 +24,7 @@ public class PearsonCorrelationCoefficient {
         return a.stream().reduce((double) 0, Double::sum)/numberofArray;
     }
     private static double forSDeviaton(){
-        double d=personCorrelation();
+        double d=personCorrelation()>0?personCorrelation():1;
         double f=Math.pow(10,3);
         return Math.round(d * f) / d;
 

@@ -1,6 +1,5 @@
 package javapazzel;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Java2DArray {
@@ -9,7 +8,7 @@ public class Java2DArray {
     static int largsum = -81;
     static int sum;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
                 int n = scanner.nextInt();

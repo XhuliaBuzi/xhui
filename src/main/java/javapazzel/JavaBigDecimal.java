@@ -5,10 +5,10 @@ import java.util.*;
 
 public class JavaBigDecimal {
     private static final Scanner scanner =new Scanner(System.in);
-    private static final int numberOfListe=scanner.nextInt();
+    private static final int NEXT_INT =scanner.nextInt();
     public static void main(String[] args) {
-        String[] bigDecimalList=new String[numberOfListe];
-        for (int i = 0; i < numberOfListe; i++) {
+        String[] bigDecimalList=new String[NEXT_INT];
+        for (int i = 0; i < NEXT_INT; i++) {
             bigDecimalList[i]=scanner.next();
         }
         Arrays.sort(bigDecimalList, (a, b) -> {

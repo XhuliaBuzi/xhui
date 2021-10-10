@@ -9,7 +9,7 @@ public class JavaArraylist {
 
     public static void main(String[] args) {
         String t = scanner.nextLine().trim();
-        int sizeOfArray = Integer.valueOf(t);
+        int sizeOfArray = Integer.parseInt(t);
         List<ArrayListCalculator> arrayCalculator = new ArrayList<>();
         for (int i = 0; i < sizeOfArray; i++) {
             String s = scanner.nextLine();

@@ -3,7 +3,7 @@ package thertydaysofcode;
 import java.util.Scanner;
 
 
-public class DayOSixteenExceptionsStringtoInteger {
+public class DayOSixteenExceptionsString_to_Integer {
     private static final Scanner scanner=new Scanner(System.in);
     private static final String string=scanner.next();
 

@@ -11,8 +11,8 @@ public class JavaCurrencyFormatter {
         double payment = scanner.nextDouble();
         scanner.close();
         NumberFormat us=NumberFormat.getCurrencyInstance(Locale.US);
-        String India="#,##0.00";
-        DecimalFormat india=new DecimalFormat(India);
+        String i="#,##0.00";
+        DecimalFormat india=new DecimalFormat(i);
         NumberFormat china=NumberFormat.getCurrencyInstance(Locale.CHINA);
         NumberFormat france=NumberFormat.getCurrencyInstance(Locale.FRANCE);
 

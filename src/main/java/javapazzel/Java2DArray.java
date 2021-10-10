@@ -1,5 +1,4 @@
 package javapazzel;
-
 import java.util.Scanner;
 
 public class Java2DArray {

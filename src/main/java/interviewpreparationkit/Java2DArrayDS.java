@@ -8,7 +8,7 @@ public class Java2DArrayDS {
     static int sum;
 
     public static void main(String[] args) {
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i <= 5; i++)
             for (int j = 0; j < 6; j++) {
                 int n = scanner.nextInt();
                 arr[i][j] = n;

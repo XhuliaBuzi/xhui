@@ -3,13 +3,18 @@ package thertydaysofcode;
 import java.util.Scanner;
 
 class Calculator extends Exception {
-    public int power(int n, int p) throws Exception {
+    public int power(int n, int p){
         if (n >= 0 && p >= 0) return (int) Math.pow(n, p);
-        else throw new Exception("n and p should be non-negative");
+        else try {
+            throw new Exception("n and p should be non-negative");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return n;
     }
 }
 
-public class DayPMoreExceptions {
+public class MoreExceptions {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

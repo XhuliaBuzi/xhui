@@ -20,6 +20,12 @@ public class TwelveInheritance {
     }
     public static void calculate(int sum){
         int a=sum/ TwelveInheritance.SUM;
-        System.out.println((a<40)?"T":(a<55)?"D":(a<70)?"P":(a<80)?"A":(a<90)?"E":"O");
+        String print;
+        if(a<40) print="T";
+        else if(a<55) print="D";
+        else if(a<70) print="P";
+        else if(a<80) print="A";
+        else print=(a<90)?"E":"O";
+        System.out.println(print);
     }
 }

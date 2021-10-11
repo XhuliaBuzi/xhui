@@ -1,41 +1,27 @@
 package problemsolving;
 
-import java.io.*;
-import java.util.stream.IntStream;
+import java.util.Scanner;
 
 class Result {
-
-    public static int towerBreakers(int n, int m) {
-        return (n % 2 != 0) ? ((m == 1) ? 2 : 1) : 2;
+    private Result() {
+        throw new IllegalStateException("Utility class");
     }
 
+    public static int towerBreakers(int n, int m) {
+        if (n % 2 != 0) return (m == 1) ? 2 : 1;
+        else return 2;
+    }
 }
 
 public class TowerBreakers {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+    private static final Scanner scanner = new Scanner(System.in);
+    private static final int NUMBER = scanner.nextInt();
 
-        int t = Integer.parseInt(bufferedReader.readLine().trim());
-
-        IntStream.range(0, t).forEach(tItr -> {
-            try {
-                String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");
-
-                int n = Integer.parseInt(firstMultipleInput[0]);
-
-                int m = Integer.parseInt(firstMultipleInput[1]);
-
-                int result = Result.towerBreakers(n, m);
-
-                bufferedWriter.write(String.valueOf(result));
-                bufferedWriter.newLine();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        });
-
-        bufferedReader.close();
-        bufferedWriter.close();
+    public static void main(String[] args) {
+        for (int i = 0; i < NUMBER; i++) {
+            int n = scanner.nextInt();
+            int m = scanner.nextInt();
+            System.out.println(Result.towerBreakers(n, m));
+        }
     }
 }

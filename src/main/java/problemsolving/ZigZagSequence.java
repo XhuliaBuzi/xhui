@@ -4,16 +4,16 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ZigZagSequence {
-    public static void main (String[] args) throws java.lang.Exception {
-    Scanner scanner = new Scanner(System.in);
-    int test_cases = scanner.nextInt();
-    for(int cs = 0; cs < test_cases; cs++){
+   private static final Scanner scanner = new Scanner(System.in);
+    public static void main (String[] args) {
+    int testCases = scanner.nextInt();
+    for(int cs = 0; cs < testCases; cs++){
         int n = scanner.nextInt();
-        int a[] = new int[n];
+        int[] ints = new int[n];
         for(int i = 0; i < n; i++){
-            a[i] = scanner.nextInt();
+            ints[i] = scanner.nextInt();
         }
-        findZigZagSequence(a, n);
+        findZigZagSequence(ints, n);
     }
 }
 

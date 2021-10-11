@@ -9,16 +9,16 @@ public class JavaHashset {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int t = s.nextInt();
-        String [] pair_left = new String[t];
-        String [] pair_right = new String[t];
+        String [] pairLeft = new String[t];
+        String [] pairRight = new String[t];
 
         for (int i = 0; i < t; i++) {
-            pair_left[i] = s.next();
-            pair_right[i] = s.next();
+            pairLeft[i] = s.next();
+            pairRight[i] = s.next();
         }
         Set<String> setString=new HashSet<>();
         for (int i = 0; i < t; i++) {
-            setString.add(pair_left[i]+" "+pair_right[i]);
+            setString.add(pairLeft[i]+" "+pairRight[i]);
             System.out.println(setString.size());
         }
 

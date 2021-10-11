@@ -10,16 +10,16 @@ public class JavaDequeue {
     public static void main(String[] args) {
         int print = 0;
         List<Integer> arr = new ArrayList<>();
-        Set<Integer> for_calculate_thinks = new HashSet<>(arr);
+        Set<Integer> hashSet = new HashSet<>(arr);
         for (int i = 0; i < NUMBER; i++) {
             int s = scanner.nextInt();
             arr.add(s);
-            for_calculate_thinks.add(s);
+            hashSet.add(s);
             if (arr.size() == COMBINATION) {
-                if (for_calculate_thinks.size() > print) print = for_calculate_thinks.size();
+                if (hashSet.size() > print) print = hashSet.size();
                 int delete = arr.remove(0);
                 if (!arr.contains(delete)) {
-                    for_calculate_thinks.remove(delete);
+                    hashSet.remove(delete);
                 }
             }
         }

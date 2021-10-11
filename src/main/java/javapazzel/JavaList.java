@@ -25,14 +25,19 @@ public class JavaList {
     public static void calculate(int a) {
         for (int i = 0; i < a; i++) {
             String s = scanner.next().toUpperCase(Locale.ROOT);
-            if (s.equals("INSERT")) {
-                int pozition = scanner.nextInt();
-                int number = scanner.nextInt();
-                listOfArray.add(pozition, number);
-            } else if (s.equals("DELETE")) {
-                int pozition = scanner.nextInt();
-                listOfArray.remove(pozition);
-            }
+            aVoid(s);
         }
     }
+
+    private static void aVoid(String s){
+        if (s.equals("INSERT")) {
+            int pozition = scanner.nextInt();
+            int number = scanner.nextInt();
+            listOfArray.add(pozition, number);
+        } else if (s.equals("DELETE")) {
+            int pozition = scanner.nextInt();
+            listOfArray.remove(pozition);
+        }
+    }
+
 }

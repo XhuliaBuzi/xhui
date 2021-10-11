@@ -3,8 +3,8 @@ package problemsolving;
 import java.util.Scanner;
 
 public class BirthdayCakeCandles {
-    private final static Scanner scanner=new Scanner(System.in);
-   private final static int NEXT_INT =scanner.nextInt();
+    private static final Scanner scanner=new Scanner(System.in);
+   private static final int NEXT_INT =scanner.nextInt();
     public static void main(String[] args) {
         int[] arrInt=new int[NEXT_INT];
         int test=0;

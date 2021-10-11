@@ -5,24 +5,13 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-class Student {
-    private final int id;
-    private final String fname;
-    private final double cgpa;
-
-    public Student(int id, String fname, double cgpa) {
-        super();
-        this.id = id;
-        this.fname = fname;
-        this.cgpa = cgpa;
-    }
-
+record Student(int id, String name, double cgpa) {
     public int getId() {
         return id;
     }
 
-    public String getFname() {
-        return fname;
+    public String GetName() {
+        return name;
     }
 
     public double getCgpa() {
@@ -38,17 +27,17 @@ public class JavaSort {
         List<Student> studentList = new ArrayList<>();
         while (testCases > 0) {
             int id = in.nextInt();
-            String fname = in.next();
+            String name = in.next();
             double cgpa = in.nextDouble();
 
-            Student st = new Student(id, fname, cgpa);
+            Student st = new Student(id, name, cgpa);
             studentList.add(st);
 
             testCases--;
         }
-        studentList.sort(Comparator.comparing(Student::getCgpa).reversed().thenComparing(Student::getFname).thenComparing(Student::getId));
+        studentList.sort(Comparator.comparing(Student::getCgpa).reversed().thenComparing(Student::GetName).thenComparing(Student::getId));
         for (Student st : studentList) {
-            System.out.println(st.getFname());
+            System.out.println(st.GetName());
         }
     }
 }

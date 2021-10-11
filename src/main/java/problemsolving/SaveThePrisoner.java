@@ -5,14 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.stream.IntStream;
 
-class Resultatt {
+class Section {
 
+    private Section() {
+        throw new IllegalStateException("Utility class");
+    }
 
     public static int saveThePrisoner(int n, int m, int s) {
         int t = (m + s) % n - 1;
         int k = (m % n + s) - 1;
-        return (t > 0) ? t : (k == 0 ? (s == 1 ? n : s) : k);
-
+        if(t > 0) return t;
+        else if(k == 0) return (s == 1 ? n : s);
+        else return k;
     }
 
 }
@@ -33,7 +37,7 @@ public class SaveThePrisoner {
 
                 int s = Integer.parseInt(firstMultipleInput[2]);
 
-                System.out.println(Resultatt.saveThePrisoner(n, m, s));
+                System.out.println(Section.saveThePrisoner(n, m, s));
 
 
             } catch (IOException ex) {

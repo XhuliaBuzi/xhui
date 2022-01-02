@@ -1,5 +1,7 @@
 package thertydaysofcode;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PoissonDistribution {
@@ -13,6 +15,8 @@ public class PoissonDistribution {
         for (int i = K; i > 0; i--) {
             kFactorial *= i;
         }
+        List<String> g=new ArrayList<>();
+
         System.out.printf("%.3f",((Math.pow(DOUBLE, K) * Math.pow(E, -1* DOUBLE) ) / kFactorial));
     }
 }

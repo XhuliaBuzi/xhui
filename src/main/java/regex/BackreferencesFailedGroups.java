@@ -7,13 +7,13 @@ public class BackreferencesFailedGroups {
 
         public static void main(String[] args) {
 
-            Regex_BackreferencesFailedGroups tester = new Regex_BackreferencesFailedGroups();
+            Regex_B tester = new Regex_B();
             tester.checker("(^\\d{8}$)|(^(\\d{2}-){3}\\d{2}$)"); // Use \\ instead of using \
 
         }
     }
 
-    class Regex_BackreferencesFailedGroups {
+    class Regex_B {
 
         public void checker(String Regex_Pattern){
 

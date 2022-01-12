@@ -12,14 +12,14 @@ public class DetectingValidLatitudeandLongitudePairs {
         sc.nextLine();
         Pattern p = Pattern.compile("\\([\\+\\-]?(([0-9]|[1-8][0-9])(\\.\\d+)?|90(\\.0+)?), [\\+\\-]?(([0-9]{1,2}|1[0-7][0-9])(\\.\\d+)?|180(\\.0+)?)\\)");
         while(N-- > 0) {
-            Matcher m = p.matcher(sc.nextLine());
+            Matcher m = p.matcher(sc.nextLine());             
             if(m.find()) {
                 System.out.println("Valid");
             }
             else {
                 System.out.println("Invalid");
             }
-        }
+        }                     
         sc.close();
     }
 }
